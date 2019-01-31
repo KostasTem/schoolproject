@@ -5,11 +5,10 @@ def maxDistance(a,b):
         list1[i] = int(list1[i])
     lenght = len(list1)
     i = 1
-    j = 0
     total = 0
-    while i<lenght:
+    while i<=lenght:
         subset = list(combinations(list1,i))
-        while j<len(subset):
+        for j in range(len(subset)):
             if sum(subset[j])<=b and total<sum(subset[j]):
                 total = sum(subset[j])
             j=j+1
