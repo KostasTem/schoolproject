@@ -11,7 +11,6 @@ def maxDistance(a,b):
         for j in range(len(subset)):
             if sum(subset[j])<=b and total<sum(subset[j]):
                 total = sum(subset[j])
-            j=j+1
         i=i+1
     print("Το μεγαλύτερο άθροισμα των ακεραίων της λίστας που είναι μικρότερο ή ισό με το "+ str(b) +" είναι το "+str(total))
 c = input("Εισάγεται μια λίστα σε μορφή α,β,γ,...:")
