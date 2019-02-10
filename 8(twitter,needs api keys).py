@@ -8,12 +8,9 @@ access_token_secret=""
 auth = OAuthHandler(consumer_key, consumer_secret)
 auth.set_access_token(access_token, access_token_secret)
 auth_api = API(auth)
-account_list = [None]*2
 
 account1 = input("Εισάγεται Το Όνομα Του Πρώτου Χρήστη:")
 account2 = input("Εισάγεται Το Όνομα Του Δεύτερου Χρήστη:")
-account_list[0] = account1
-account_list[1] = account2
 
 itemOne = auth_api.get_user(account1)
 itemTwo = auth_api.get_user(account2)
